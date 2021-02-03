@@ -1,0 +1,20 @@
+.a {
+  text-decoration: none;
+  
+
+}
+
+.a:hover {
+  text-decoration: underline;
+}
+
+.a.active {
+  background-color: #23C9FF;
+  border: 1px solid #5EB2F2;
+  box-shadow: 0px 0 2px 0px #C0C0C0;
+  color: green;
+}
+.a[disabled] {
+  opacity: .5;
+  cursor: not-allowed;
+}

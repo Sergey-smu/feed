@@ -1,0 +1,17 @@
+.nav-item {
+  
+  cursor: pointer;
+ 
+  text-transform: uppercase;
+}
+
+.nav-item.active {
+  background-color: #23C9FF;
+  border: 1px solid #5EB2F2;
+  box-shadow: 0px 0 2px 0px #C0C0C0;
+  color: green;
+}
+
+.vertical .nav-item {
+  border-radius: 5px 0 0 5px;
+}

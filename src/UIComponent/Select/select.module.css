@@ -1,0 +1,46 @@
+.select {
+  box-sizing: border-box;
+  height: 40px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #EBEBEB;
+}
+
+.select[disabled] {
+  cursor: not-allowed;
+}
+
+.select.error {
+  border-color: #D43728;
+  background-color: rgba(212, 55, 40, 0.2);
+}
+
+.selectWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.labelsWrapper {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectRequired {
+  color: #777;
+}
+
+.selectRequired,
+.selectLabel {
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.selectError {
+  margin-top: 5px;
+  color: #D43728;
+  font-size: 12px;
+}
