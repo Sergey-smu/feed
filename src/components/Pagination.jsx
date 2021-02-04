@@ -1,18 +1,20 @@
 import React from 'react';
-import {getPagesArray} from "../../../utils/pages";
+import Button from '../UIComponent/Button';
+import {getPagesArray} from "../utils/pages";
 
 const Pagination = ({totalPages, page, changePage}) => {
     let pagesArray = getPagesArray(totalPages);
     return (
         <div className="page__wrapper">
             {pagesArray.map(p =>
-                <span
+                <Button
                     onClick={() => changePage(p)}
                     key={p}
-                    className={page === p ? 'page page__current' : 'page'}
+                    className='page'
+                    active={page === p}
                 >
                         {p}
-                    </span>
+                    </Button>
             )}
         </div>
     );

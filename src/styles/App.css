@@ -8,16 +8,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #ddd;
 }
 
 .App {
     width: 800px;
+    background-color: #fff;
+
 }
 
 .post {
     display: flex;
     padding: 15px;
-    border: 2px solid teal;
+    border: 2px solid #fc0;
     margin-top: 15px;
     justify-content: space-between;
     align-items: center;
@@ -28,18 +31,19 @@
 }
 
 .post-enter {
-    transform: translateX(-350px);
+    transform: translateY(+1000px);
 }
 .post-enter-active {
-    transform: translateX(0px);
-    transition: all 500ms ease-in;
+    transform: translateY(0px);
+    transition: all 1s;
 }
 .post-exit {
     opacity: 1;
 }
 .post-exit-active {
-    transform: translateX(-350px);
-    transition: all 500ms ease-in;
+    transform: translateY(+1000px);
+    transition: all 1s ease-in;
+
 }
 
 .page__wrapper {
@@ -49,14 +53,11 @@
 
 .page {
     padding: 10px;
-    border: 1px solid teal;
+    border: 1px solid #fc0;
     cursor: pointer;
 }
 
-.page__current {
-    border: 2px solid orange;
-    font-weight: bold;
-}
+
 
 .navbar {
     height: 50px;

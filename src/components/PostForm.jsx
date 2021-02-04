@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import MyInput from "./UI/input/MyInput";
-import MyButton from "./UI/button/MyButton";
+import Button from '../UIComponent/Button';
+import Input from '../UIComponent/Input';
 
 const PostForm = ({create}) => {
     const [post, setPost] = useState({title: '', body: ''})
@@ -18,20 +18,23 @@ const PostForm = ({create}) => {
     return (
         <form>
             {/*Управляемый компонент*/}
-            <MyInput
+            <Input
                 value={post.title}
                 onChange={e => setPost({...post, title: e.target.value})}
                 type="text"
                 placeholder="Название поста"
+                id='createPostTitle'
             />
             {/*Неуправляемый\Неконтролируемый компонент*/}
-            <MyInput
+            <Input
                 value={post.body}
                 onChange={e => setPost({...post, body: e.target.value})}
                 type="text"
                 placeholder="Описание поста"
+                id='createPostBody'
+
             />
-            <MyButton onClick={addNewPost}>Создать пост</MyButton>
+            <Button onClick={addNewPost}>Создать пост</Button>
         </form>
     );
 };

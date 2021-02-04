@@ -44,13 +44,13 @@ function A({href, className, children, active, disabled, onClick, ...attrs }) {
   };
 
   return (
-    <Link href={href}>
-      <a className={classes}
+    <Link to={href}
+       className={classes}
           disabled={disabled}
           onClick={onClickAction}
           {...attrs}>
         {children}
-      </a>
+      
     </Link>
   );
 }

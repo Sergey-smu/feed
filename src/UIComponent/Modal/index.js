@@ -27,7 +27,7 @@ const Modal = ({
                 <Button onClick={onSubmit}>{submit}</Button>
               </div>
             </div>
-          </div>
+          </div> 
         </Portal>
       }
     </>
